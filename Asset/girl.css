@@ -1,0 +1,65 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffebf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  animation: backgroundAnimation 10s infinite alternate;
+}
+
+.container {
+  text-align: center;
+  animation: fadeInAnimation 2s ease-in-out; /* Animasi muncul saat halaman dimuat */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Warna pink yang lebih cerah */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #d44d86; /* Warna pink yang lebih gelap saat dihover */
+}
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: cardAnimation 2s ease-in-out; /* Animasi muncul saat halaman dimuat */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardAnimation {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes backgroundAnimation {
+  from {
+    background-color: #ffebf0;
+  }
+  to {
+    background-color: #ffd1e1;
+  }
+}
